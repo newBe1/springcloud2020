@@ -1,0 +1,4 @@
+com\yan\myrule\MySelfRule.class
+com\yan\springcloud\OrderEurekaMain80.class
+com\yan\springcloud\config\ApplicationContextConfig.class
+com\yan\springcloud\controller\OrderController.class
