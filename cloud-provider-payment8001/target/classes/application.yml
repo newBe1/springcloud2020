@@ -6,8 +6,8 @@ spring:
     name: cloud-providerEUK-payment
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource      #当前数据源操作类型
-    driver-class-name: org.gjt.mm.mysql.Driver        #mysql驱动包
-    url: jdbc:mysql://localhost:3306/db2020?useUnicode=true&characterEncoding-utr-8&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver        #mysql驱动包
+    url: jdbc:mysql://localhost:3306/db2020?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: root
 
@@ -21,8 +21,8 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      #defaultZone: http://localhost:7001/eureka
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      defaultZone: http://localhost:7001/eureka
+      #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   instance:
     instance-id: payment8001   #eureka页面显示名 不会显示主机地址和端口
     prefer-ip-address: true

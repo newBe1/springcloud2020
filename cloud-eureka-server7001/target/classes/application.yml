@@ -15,3 +15,6 @@ eureka:
     service-url:
       # 设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址
       defaultZone: http://eureka7002.com:7002/eureka/
+  server:
+    #关闭注册中心的自我保护机制，防止已关闭的实例无法从注册中心剔除
+    enable-self-preservation: false
