@@ -1,0 +1,10 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: nacos-payment-privider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 129.28.169.156:8848
